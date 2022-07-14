@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.header__title {
+  font-size: 3.2rem;
+  letter-spacing: -0.53px;
+  line-height: 3rem;
+}/*# sourceMappingURL=header.css.map */
