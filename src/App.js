@@ -1,10 +1,15 @@
 import Header from "./components/Header";
+import { ThemeProvider } from "./store/theme-context";
+
 
 function App() {
+
   return (
-    <div className="wrapper">
-      <Header />
-    </div>
+    <ThemeProvider>
+      <div className="wrapper">
+        <Header />
+      </div>
+    </ThemeProvider>
   );
 }
 
