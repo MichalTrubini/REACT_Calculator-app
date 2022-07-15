@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <div style={setThemeStyles('backgroundMain')}>
-            <header style={setThemeStyles('text1')} className="header">
+            <header style={setThemeStyles('headerText')} className="header">
                 <div className="header__left">
                     <p className='header__title'>calc</p>
                 </div>

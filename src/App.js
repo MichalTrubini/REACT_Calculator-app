@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Main from "./components/Main";
 import { ThemeProvider } from "./store/theme-context";
 
 
@@ -8,6 +9,7 @@ function App() {
     <ThemeProvider>
       <div className="wrapper">
         <Header />
+        <Main/>
       </div>
     </ThemeProvider>
   );

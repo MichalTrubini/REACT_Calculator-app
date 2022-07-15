@@ -15,46 +15,36 @@ export function ThemeProvider({children}) {
         const styles = {
             theme1: {
                 backgroundMain: {background:'hsl(222, 26%, 31%)'},
+                headerText: {color:'hsl(0, 0%, 100%)'},
                 backgroundToggle: {background:'hsl(223, 31%, 20%)'},
-                backgroundScreen: {background:'hsl(224, 36%, 15%)'},
+                screenProps: {background:'hsl(224, 36%, 15%)', color:'hsl(0, 0%, 100%)'},
+                backgroundKeyboard: {background:'hsl(223, 31%, 20%)'},
                 backgroundSwitcher: {background:'hsl(6, 63%, 50%)'},
-                backgroundKey1: {background:'hsl(225, 21%, 49%)'},
-                shadowKey1: {},
-                backgroundKey2: {background:'hsl(6, 63%, 50%)'},
-                shadowKey2: {background:'hsl(6, 70%, 34%)'},
-                backgroundKey3: {background:'hsl(30, 25%, 89%)'},
-                shadowKey3: {background:'hsl(28, 16%, 65%)'},
-                text2: {color:'hsl(221, 14%, 31%)'},
-                text1: {color:'hsl(0, 0%, 100%)'}
+                keyProps: {background:'hsl(30, 25%, 89%)', color:'hsl(221, 14%, 31%)', boxShadow: 'inset 0px -4px 0px #B3A497'},
+                delProps: {background: 'hsla(225, 21%, 49%, 1)', color:'hsl(0, 0%, 100%)', fontSize: '2rem', boxShadow: 'inset 0px -4px 0px #414E73'},
+                resultProps: {background: 'hsla(6, 63%, 50%, 1)', color:'hsl(0, 0%, 100%)', boxShadow: 'inset 0px -4px 0px #93261A'}
             },
             theme2: {
                 backgroundMain: {background:'hsl(0, 0%, 90%)'},
+                headerText: {color:'hsl(60, 10%, 19%)'},
                 backgroundToggle: {background:'hsl(0, 5%, 81%)'},
-                backgroundScreen: {background:'hsl(0, 0%, 93%)'},
+                screenProps: {background:'hsl(0, 0%, 93%)', color:'hsl(60, 10%, 19%)'},
+                backgroundKeyboard: {background:'hsl(0, 5%, 81%)'},
                 backgroundSwitcher: {background:'hsl(25, 98%, 40%)'},
-                backgroundKey1: {background:'hsl(185, 42%, 37%)'},
-                shadowKey1: {background:'hsl(185, 58%, 25%)'},
-                backgroundKey2: {background:'hsl(25, 98%, 40%)'},
-                shadowKey2: {background:'hsl(25, 99%, 27%)'},
-                backgroundKey3: {background:'hsl(45, 7%, 89%)'},
-                shadowKey3: {background:'hsl(35, 11%, 61%)'},
-                text1: {color:'hsl(60, 10%, 19%)'},
-                text2: {color:'hsl(0, 0%, 100%)'}
+                keyProps: {background:'hsl(45, 7%, 89%)', color:'hsl(60, 10%, 19%)', boxShadow: 'inset 0px -4px 0px #A79E91'},
+                delProps: {background: 'hsla(184, 42%, 37%, 1)', color:'hsl(0, 0%, 100%)', fontSize: '2rem', boxShadow: 'inset 0px -4px 0px #1B6066'},
+                resultProps: {background: 'hsla(25, 98%, 40%, 1)', color:'hsl(0, 0%, 100%)', boxShadow: 'inset 0px -4px 0px #873901'}
             },
             theme3: {
                 backgroundMain: {background:'hsl(268, 75%, 9%)'},
+                headerText: {color:'hsl(52, 100%, 62%)'},
                 backgroundToggle: {background:'hsl(268, 71%, 12%)'},
-                backgroundScreen: {background:'hsl(268, 71%, 12%)'},
+                screenProps: {background:'hsl(268, 71%, 12%)', color:'hsl(52, 100%, 62%)'},
+                backgroundKeyboard: {background:'hsl(268, 71%, 12%)'},
                 backgroundSwitcher: {background:'hsl(176, 100%, 44%)'},
-                backgroundKey1: {background:'hsl(281, 89%, 26%)'},
-                shadowKey1: {background:'hsl(285, 91%, 52%)'},
-                backgroundKey2: {background:'hsl(176, 100%, 44%)'},
-                shadowKey2: {background:'hsl(177, 92%, 70%)'},
-                backgroundKey3: {background:'hsl(268, 47%, 21%)'},
-                shadowKey3: {background:'hsl(290, 70%, 36%)'},
-                text2: {color:'hsl(198, 20%, 13%)'},
-                text1: {color:'hsl(52, 100%, 62%)'},
-                text3: {color:'hsl(0, 0%, 100%)'}
+                keyProps: {background:'hsl(268, 47%, 21%)', color:'hsl(52, 100%, 62%)', boxShadow: 'inset 0px -4px 0px #881C9E'},
+                delProps: {background: 'hsla(281, 89%, 26%, 1)', color:'hsl(0, 0%, 100%)', fontSize: '2rem', boxShadow: 'inset 0px -4px 0px #BE15F4'},
+                resultProps: {background: 'hsla(176, 100%, 44%, 1)', color:'hsla(198, 20%, 13%, 1)', boxShadow: 'inset 0px -4px 0px #6CF9F1'}
             }
         }
 
