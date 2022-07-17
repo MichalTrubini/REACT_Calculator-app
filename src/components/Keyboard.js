@@ -33,6 +33,7 @@ const Keyboard = () => {
     }
 
     const inputResultHandler = () => {
+
         if (operatorInput === 'x') setvalueOutput(parseFloat(calcInputFirst) * parseFloat(valueOutput))
         else if (operatorInput === '+') setvalueOutput(parseFloat(calcInputFirst) + parseFloat(valueOutput))
         else if (operatorInput === '-') setvalueOutput(parseFloat(calcInputFirst) - parseFloat(valueOutput))
@@ -48,7 +49,8 @@ const Keyboard = () => {
     return (
         <main className="main">
             <div className="screen">
-                <input value={valueOutput} className={setThemeStyles('screenProps') + " screen__input"} readOnly/>
+                <label htmlFor="screen-output" hidden>Screen output</label>
+                <input id="screen-output" value={valueOutput} className={setThemeStyles('screenProps') + " screen__input"} readOnly/>
             </div>
             <div className={setThemeStyles('backgroundKeyboard') + " keyboard"} >
                 <div className="keyboard__top">
