@@ -26,7 +26,7 @@
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.7rem;
   margin-bottom: 0.5rem;
 }
 .header__theme-switch-container {
@@ -52,6 +52,9 @@
   border-radius: 100%;
   margin: 0 0.5rem;
   position: absolute;
+}
+.header__theme-switch:hover, .header__theme-switch:focus {
+  cursor: pointer;
 }
 .header__theme-switch-left {
   left: 0;

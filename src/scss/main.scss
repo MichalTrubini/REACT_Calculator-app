@@ -1,3 +1,191 @@
+//***********THEME STYLES START*************
+
+//***THEME ONE***
+
+.background-main-one {
+    background: hsl(222, 26%, 31%);
+}
+
+.header-color-one {
+    color:hsl(0, 0%, 100%)
+}
+
+.background-toggle-one {
+    background:hsl(223, 31%, 20%)
+}
+
+.screen-props-one {
+    background:hsl(224, 36%, 15%);
+    color:hsl(0, 0%, 100%)
+}
+
+.background-switcher-one {
+    background:hsl(6, 63%, 50%)
+}
+
+.background-switcher-one:hover, .background-switcher-one:focus {
+    background: #F96B5B;
+}
+
+.background-keyboard-one {
+    background:hsl(223, 31%, 20%)
+}
+
+.key-props-one {
+    background:hsl(30, 25%, 89%); 
+    color:hsl(221, 14%, 31%); 
+    box-shadow: inset 0px -4px 0px #B3A497
+}
+
+.key-props-one:hover, .key-props-one:focus {
+    background: white;
+}
+
+.del-props-one {
+    background: hsla(225, 21%, 49%, 1); 
+    color:hsl(0, 0%, 100%);
+    box-shadow: inset 0px -4px 0px #414E73
+}
+
+.del-props-one:hover, .del-props-one:focus {
+    background: #A2B2E1;
+}
+
+.result-props-one {
+    background: hsla(6, 63%, 50%, 1);
+    color:hsl(0, 0%, 100%);
+    box-shadow: inset 0px -4px 0px #93261A
+}
+
+.result-props-one:hover, .result-props-one:focus {
+    background: #F96B5B;
+}
+
+//***THEME TWO***
+
+.background-main-two {
+    background:hsl(0, 0%, 90%);
+}
+
+.header-color-two {
+    color:hsl(60, 10%, 19%)
+}
+
+.background-toggle-two {
+    background:hsl(0, 5%, 81%)
+}
+
+.screen-props-two {
+    background:hsl(0, 0%, 93%);
+    color:hsl(60, 10%, 19%)
+}
+
+.background-switcher-two {
+    background:hsl(25, 98%, 40%)
+}
+
+.background-switcher-two:hover, .background-switcher-two:focus {
+    background: #FF8A38;
+}
+
+.background-keyboard-two {
+    background:hsl(0, 5%, 81%)
+}
+
+.key-props-two {
+    background:hsl(45, 7%, 89%); 
+    color:hsl(60, 10%, 19%); 
+    box-shadow: inset 0px -4px 0px #A79E91
+}
+
+.key-props-two:hover, .key-props-two:focus {
+    background: white;
+}
+
+.del-props-two {
+    background: hsla(184, 42%, 37%, 1);
+    color:hsl(0, 0%, 100%);
+    box-shadow: inset 0px -4px 0px #1B6066
+}
+
+.del-props-two:hover, .del-props-two:focus {
+    background: #62B5BC;
+}
+
+.result-props-two {
+    background: hsla(25, 98%, 40%, 1);
+    color:hsl(0, 0%, 100%);
+    box-shadow: inset 0px -4px 0px #873901
+}
+
+.result-props-two:hover, .result-props-two:focus {
+    background: #FF8A38;
+}
+
+//***THEME THREE***
+
+.background-main-three {
+    background:hsl(268, 75%, 9%);
+}
+
+.header-color-three {
+    color:hsl(52, 100%, 62%)
+}
+
+.background-toggle-three {
+    background:hsl(268, 71%, 12%)
+}
+
+.screen-props-three {
+    background:hsl(268, 71%, 12%);
+    color:hsl(52, 100%, 62%)
+}
+
+.background-switcher-three {
+    background:hsl(176, 100%, 44%)
+}
+
+.background-switcher-three:hover, .background-switcher-three:focus {
+    background: #93FFF8;
+}
+
+
+.background-keyboard-three {
+    background:hsl(268, 71%, 12%)
+}
+
+.key-props-three {
+    background:hsl(268, 47%, 21%); 
+    color:hsl(52, 100%, 62%);
+    box-shadow: inset 0px -4px 0px #881C9E;
+}
+
+.key-props-three:hover, .key-props-three:focus {
+    background: #6C34AC;
+}
+
+.del-props-three {
+    background: hsla(281, 89%, 26%, 1); 
+    color:hsl(0, 0%, 100%); 
+    box-shadow: inset 0px -4px 0px #BE15F4
+}
+
+.del-props-three:hover, .del-props-three:focus {
+    background: #8631AF;
+}
+
+.result-props-three {
+    background: hsla(176, 100%, 44%, 1);
+    color:hsla(198, 20%, 13%, 1);
+    box-shadow: inset 0px -4px 0px #6CF9F1
+}
+
+.result-props-three:hover, .result-props-three:focus {
+    background: #93FFF8;
+}
+
+//***********THEME STYLES END*************
+
 .main {
     max-width: 32.7rem;
     width: 100%;
@@ -51,6 +239,10 @@
         letter-spacing: -0.53px;
     }
 
+    &--small-fix {
+        font-size: 2rem;
+    }
+
     &--large {
         width: 13.3rem;
         height: 6rem;
@@ -95,6 +287,10 @@ button:active {
             font-size: 4rem;
             letter-spacing: -0.67px;
         }
+
+        &--small-fix {
+            font-size: 2.8rem;
+        }
     
         &--large {
             width: 22.7rem;
@@ -109,7 +305,6 @@ button:active {
     }
 
     .screen {
-
         &__input {
             padding: 4rem 3.2rem 3.6rem;
             font-size: 5.6rem;

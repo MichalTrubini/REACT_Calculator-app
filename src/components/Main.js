@@ -10,7 +10,7 @@ const Main = () => {
     const {setThemeStyles} = useContext(ThemeContext);
 
     return (
-        <div style={setThemeStyles('backgroundMain')} className="wrapper">
+        <div className={setThemeStyles('backgroundMain') + " wrapper"}>
             <Header />
             <Keyboard/>
         </div>

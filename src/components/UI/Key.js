@@ -7,7 +7,7 @@ const Key = (props) => {
     const {setThemeStyles} = useContext(ThemeContext);
 
     return (
-        <button style={setThemeStyles(props.styling)} className={props.className} onClick={props.onClick}>
+        <button className={props.className} onClick={props.onClick}>
             {props.children}
         </button>
     )

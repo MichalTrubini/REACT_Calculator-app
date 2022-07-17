@@ -9,7 +9,7 @@ const Header = () => {
     const {setThemeStyles} = useContext(ThemeContext);
 
     return (
-        <header style={setThemeStyles('headerText')} className="header">
+        <header className={setThemeStyles('headerText') + " header"}>
             <div className="header__left">
                 <p className='header__title'>calc</p>
             </div>
@@ -17,11 +17,11 @@ const Header = () => {
                 <p className='header__subtitle'>theme</p>
                 <div className='header__theme-switch-wrapper'>
                     <p className='header__theme-switch-positions'><span>1</span><span>2</span><span>3</span></p>
-                    <div style={setThemeStyles('backgroundToggle')} className='header__theme-switch-container'>
+                    <div className={setThemeStyles('backgroundToggle') + ' header__theme-switch-container'} >
                         <div id='theme1' className='header__theme-switch-position' onClick={setThemeHandler}></div>
                         <div id='theme2' className='header__theme-switch-position' onClick={setThemeHandler}></div>
                         <div id='theme3' className='header__theme-switch-position' onClick={setThemeHandler}></div>
-                        <div style={setThemeStyles('backgroundSwitcher')} className={switcherPosition() + ' header__theme-switch'}></div>
+                        <div className={switcherPosition() + setThemeStyles('backgroundSwitcher') + ' header__theme-switch'}></div>
                     </div>
                 </div>
             </div>

@@ -46,30 +46,30 @@ const Keyboard = () => {
     return (
         <main className="main">
             <div className="screen">
-                <input style={setThemeStyles('screenProps')} value={valueOutput} className="screen__input" readOnly/>
+                <input value={valueOutput} className={setThemeStyles('screenProps') + " screen__input"} readOnly/>
             </div>
-            <div style={setThemeStyles('backgroundKeyboard')} className="keyboard">
+            <div className={setThemeStyles('backgroundKeyboard') + " keyboard"} >
                 <div className="keyboard__top">
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputNumberHandler('7')}}>7</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputNumberHandler('8')}}>8</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputNumberHandler('9')}}>9</Key>
-                    <Key styling='delProps' className="key key--small" onClick={inputDeletetHandler}>DEL</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputNumberHandler('4')}}>4</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputNumberHandler('5')}}>5</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputNumberHandler('6')}}>6</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputOperatorHandler('+')}}>+</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputNumberHandler('1')}}>1</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputNumberHandler('2')}}>2</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputNumberHandler('3')}}>3</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputOperatorHandler('-')}}>-</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputNumberHandler('.')}}>.</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputNumberHandler('0')}}>0</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputOperatorHandler('/')}}>/</Key>
-                    <Key styling='keyProps' className="key key--small" onClick={() => {inputOperatorHandler('x')}}>x</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputNumberHandler('7')}}>7</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputNumberHandler('8')}}>8</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputNumberHandler('9')}}>9</Key>
+                    <Key className={setThemeStyles('delProps') + " key key--small key--small-fix"} onClick={inputDeletetHandler}>DEL</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputNumberHandler('4')}}>4</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputNumberHandler('5')}}>5</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputNumberHandler('6')}}>6</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputOperatorHandler('+')}}>+</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputNumberHandler('1')}}>1</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputNumberHandler('2')}}>2</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputNumberHandler('3')}}>3</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputOperatorHandler('-')}}>-</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputNumberHandler('.')}}>.</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputNumberHandler('0')}}>0</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputOperatorHandler('/')}}>/</Key>
+                    <Key className={setThemeStyles('keyProps') + " key key--small"} onClick={() => {inputOperatorHandler('x')}}>x</Key>
                 </div>
                 <div className="keyboard__bottom">
-                    <Key styling='delProps' className="key key--large" onClick={inputResetHandler}>RESET</Key>
-                    <Key styling='resultProps' className="key key--large" onClick={inputResultHandler}>=</Key>
+                    <Key className={setThemeStyles('delProps') + " key key--large"} onClick={inputResetHandler}>RESET</Key>
+                    <Key className={setThemeStyles('resultProps') + " key key--large"}  onClick={inputResultHandler}>=</Key>
                 </div>
             </div>
         </main>
