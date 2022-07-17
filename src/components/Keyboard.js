@@ -32,14 +32,11 @@ const Keyboard = () => {
         setOperatorInput(value);
     }
 
-    console.log(valueOutput);
-    console.log(calcInputFirst);
-
     const inputResultHandler = () => {
 
         if (operatorInput === '/' & valueOutput === '0') return setvalueOutput('error');
         if (valueOutput === 'error' || calcInputFirst === 'error') return setvalueOutput('error');
-        
+
         if (operatorInput === 'x') setvalueOutput(parseFloat(calcInputFirst) * parseFloat(valueOutput))
         else if (operatorInput === '+') setvalueOutput(parseFloat(calcInputFirst) + parseFloat(valueOutput))
         else if (operatorInput === '-') setvalueOutput(parseFloat(calcInputFirst) - parseFloat(valueOutput))
