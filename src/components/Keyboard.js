@@ -9,19 +9,19 @@ const Keyboard = () => {
 
     const {setThemeStyles} = useContext(ThemeContext);
 
-    const[valueOutput, setvalueOutput] = useState('');
+    const [valueOutput, setvalueOutput] = useState('0');
     const [calcInputFirst, setCalcInputFirst] = useState('');
     const [operatorInput, setOperatorInput] = useState('');
 
     const inputNumberHandler = (value) => {
         
-        if (calcInputFirst === '') {setvalueOutput(prevValue => prevValue + value)}
+        if (calcInputFirst === '' & valueOutput.length < 10 ) {setvalueOutput(prevValue => prevValue.replace(/^0+/, '') + value)}
         else if (valueOutput === calcInputFirst) {setvalueOutput(value)} 
-        else setvalueOutput(prevValue => prevValue + value);
+        else if (valueOutput.length < 10 ) setvalueOutput(prevValue => prevValue.replace(/^0+/, '') + value);
     }
 
     const inputResetHandler = () => {
-        setvalueOutput('');
+        setvalueOutput('0');
         setCalcInputFirst('');
         setOperatorInput('');
     }
@@ -32,15 +32,16 @@ const Keyboard = () => {
     }
 
     const inputResultHandler = () => {
-        if (operatorInput === 'x') setvalueOutput(parseInt(calcInputFirst) * parseInt(valueOutput))
-        else if (operatorInput === '+') setvalueOutput(parseInt(calcInputFirst) + parseInt(valueOutput))
-        else if (operatorInput === '-') setvalueOutput(parseInt(calcInputFirst) - parseInt(valueOutput))
-        else if (operatorInput === '/') setvalueOutput(parseInt(calcInputFirst / valueOutput));
+        if (operatorInput === 'x') setvalueOutput(parseFloat(calcInputFirst) * parseFloat(valueOutput))
+        else if (operatorInput === '+') setvalueOutput(parseFloat(calcInputFirst) + parseFloat(valueOutput))
+        else if (operatorInput === '-') setvalueOutput(parseFloat(calcInputFirst) - parseFloat(valueOutput))
+        else if (operatorInput === '/') setvalueOutput(parseFloat(calcInputFirst / valueOutput));
     }
 
     const inputDeletetHandler = () => {
-
-        setvalueOutput(prevValue => prevValue.slice(0,-1))
+        if (valueOutput === '0') return;
+        if (valueOutput.length === 1) return setvalueOutput('0');
+        setvalueOutput(prevValue => String(prevValue).slice(0,-1))
     }
 
     return (

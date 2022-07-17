@@ -23,7 +23,7 @@
     background:hsl(6, 63%, 50%)
 }
 
-.background-switcher-one:hover, .background-switcher-one:focus {
+.background-switcher-one:hover {
     background: #F96B5B;
 }
 
@@ -37,7 +37,7 @@
     box-shadow: inset 0px -4px 0px #B3A497
 }
 
-.key-props-one:hover, .key-props-one:focus {
+.key-props-one:active {
     background: white;
 }
 
@@ -47,7 +47,7 @@
     box-shadow: inset 0px -4px 0px #414E73
 }
 
-.del-props-one:hover, .del-props-one:focus {
+.del-props-one:active {
     background: #A2B2E1;
 }
 
@@ -57,7 +57,7 @@
     box-shadow: inset 0px -4px 0px #93261A
 }
 
-.result-props-one:hover, .result-props-one:focus {
+.result-props-one:active {
     background: #F96B5B;
 }
 
@@ -84,7 +84,7 @@
     background:hsl(25, 98%, 40%)
 }
 
-.background-switcher-two:hover, .background-switcher-two:focus {
+.background-switcher-two:hover {
     background: #FF8A38;
 }
 
@@ -98,7 +98,7 @@
     box-shadow: inset 0px -4px 0px #A79E91
 }
 
-.key-props-two:hover, .key-props-two:focus {
+.key-props-two:active {
     background: white;
 }
 
@@ -108,7 +108,7 @@
     box-shadow: inset 0px -4px 0px #1B6066
 }
 
-.del-props-two:hover, .del-props-two:focus {
+.del-props-two:active {
     background: #62B5BC;
 }
 
@@ -118,7 +118,7 @@
     box-shadow: inset 0px -4px 0px #873901
 }
 
-.result-props-two:hover, .result-props-two:focus {
+.result-props-two:active {
     background: #FF8A38;
 }
 
@@ -145,10 +145,9 @@
     background:hsl(176, 100%, 44%)
 }
 
-.background-switcher-three:hover, .background-switcher-three:focus {
+.background-switcher-three:hover {
     background: #93FFF8;
 }
-
 
 .background-keyboard-three {
     background:hsl(268, 71%, 12%)
@@ -160,7 +159,7 @@
     box-shadow: inset 0px -4px 0px #881C9E;
 }
 
-.key-props-three:hover, .key-props-three:focus {
+.key-props-three:active {
     background: #6C34AC;
 }
 
@@ -170,7 +169,7 @@
     box-shadow: inset 0px -4px 0px #BE15F4
 }
 
-.del-props-three:hover, .del-props-three:focus {
+.del-props-three:active {
     background: #8631AF;
 }
 
@@ -180,8 +179,47 @@
     box-shadow: inset 0px -4px 0px #6CF9F1
 }
 
-.result-props-three:hover, .result-props-three:focus {
+.result-props-three:active {
     background: #93FFF8;
+}
+
+@media screen and (min-width:600px) {
+
+    .key-props-one:hover {
+        background: white;
+    }
+    
+    .del-props-one:hover {
+        background: #A2B2E1;
+    }
+    
+    .result-props-one:hover {
+        background: #F96B5B;
+    }
+    
+    .key-props-two:hover {
+        background: white;
+    }
+    
+    .del-props-two:hover {
+        background: #62B5BC;
+    }
+    
+    .result-props-two:hover {
+        background: #FF8A38;
+    }
+    
+    .key-props-three:hover {
+        background: #6C34AC;
+    }
+
+    .del-props-three:hover {
+        background: #8631AF;
+    }
+
+    .result-props-three:hover {
+        background: #93FFF8;
+    }
 }
 
 //***********THEME STYLES END*************
