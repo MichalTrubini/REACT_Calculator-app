@@ -1,10 +1,4 @@
-import React, {useContext} from "react";
-
-import ThemeContext from "../../store/theme-context";
-
 const Key = (props) => {
-
-    const {setThemeStyles} = useContext(ThemeContext);
 
     return (
         <button className={props.className} onClick={props.onClick}>
