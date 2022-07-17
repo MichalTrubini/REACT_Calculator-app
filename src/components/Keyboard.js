@@ -15,6 +15,7 @@ const Keyboard = () => {
 
     const inputNumberHandler = (value) => {
         
+        if (valueOutput.includes('.') & value === '.') return; 
         if (calcInputFirst === '' & valueOutput.length < 10 ) {setvalueOutput(prevValue => prevValue.replace(/^0+/, '') + value)}
         else if (valueOutput === calcInputFirst) {setvalueOutput(value)} 
         else if (valueOutput.length < 10 ) setvalueOutput(prevValue => prevValue.replace(/^0+/, '') + value);
