@@ -20,8 +20,6 @@ const Keyboard = () => {
         else if (valueOutput === calcInputFirst) {setvalueOutput(value)} 
         else if (valueOutput.length < 10 ) setvalueOutput(prevValue => prevValue.replace(/^0+/, '') + value);
     }
-    console.log('valueoutput ' + valueOutput);
-    console.log('calcInputFirst ' + calcInputFirst);
 
     const inputResetHandler = () => {
         setvalueOutput('0');
@@ -34,8 +32,14 @@ const Keyboard = () => {
         setOperatorInput(value);
     }
 
+    console.log(valueOutput);
+    console.log(calcInputFirst);
+
     const inputResultHandler = () => {
 
+        if (operatorInput === '/' & valueOutput === '0') return setvalueOutput('error');
+        if (valueOutput === 'error' || calcInputFirst === 'error') return setvalueOutput('error');
+        
         if (operatorInput === 'x') setvalueOutput(parseFloat(calcInputFirst) * parseFloat(valueOutput))
         else if (operatorInput === '+') setvalueOutput(parseFloat(calcInputFirst) + parseFloat(valueOutput))
         else if (operatorInput === '-') setvalueOutput(parseFloat(calcInputFirst) - parseFloat(valueOutput))
@@ -44,6 +48,7 @@ const Keyboard = () => {
 
     const inputDeletetHandler = () => {
         if (valueOutput === '0') return;
+        if (valueOutput === 'error') return setvalueOutput('0');
         if (valueOutput.length === 1) return setvalueOutput('0');
         setvalueOutput(prevValue => String(prevValue).slice(0,-1))
     }
