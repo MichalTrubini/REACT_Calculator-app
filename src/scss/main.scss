@@ -1,5 +1,6 @@
 .main {
-    padding: 0 2.4rem 3.1rem;
+    max-width: 32.7rem;
+    width: 100%;
 }
 
 .screen {
@@ -52,8 +53,64 @@
 
     &--large {
         width: 13.3rem;
-        height: 6.4rem;
+        height: 6rem;
         font-size: 2rem;
         letter-spacing: -0.33px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .main {
+        max-width: 54rem;
+    }
+
+    .keyboard {
+        padding: 3.2rem 3rem;
+    
+        &__top {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+        }
+    
+        &__bottom {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+        }
+    }
+
+    .key {
+        line-height: 3.7rem;
+        border-radius: 10px;
+    
+        &--small{
+            width: 10.1rem;
+            height: 6rem;
+            font-size: 4rem;
+            letter-spacing: -0.67px;
+        }
+    
+        &--large {
+            width: 22.7rem;
+            height: 6rem;
+            font-size: 2.8rem;
+            letter-spacing: -0.47px;
+        }
+    }
+
+    .key:hover, .key:focus {
+        cursor: pointer;
+    }
+
+    .screen {
+
+        &__input {
+            padding: 4rem 3.2rem 3.6rem;
+            font-size: 5.6rem;
+            line-height: 5.2rem;
+            letter-spacing: -0.93px;
+        }
     }
 }

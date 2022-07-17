@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 2.4rem 3.2rem;
+    padding: 1rem 0 3.2rem;
+    max-width: 32.7rem;
+    width: 100%;
 
     &__title {
         font-size: 3.2rem;
@@ -71,5 +73,15 @@
 
     &__theme-switch-right {
         right: 0;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .header {
+        max-width: 54rem;
+
+        &__theme-switch-position:hover {
+            cursor: pointer;
+        }
     }
 }
